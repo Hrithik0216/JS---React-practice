@@ -40,5 +40,21 @@ const arr4 = [1, 2, 3, 4, 5];
 // The third argument (3) is the ending index (Ignored while adding)
 console.log(arr4.fill(0, 1, 3));
 //-------> Output : [1, 0, 0, 4, 5]
-
 console.log(arr4.includes(3));
+
+//Basics array methods to know
+//push and pop are used to add elements to the end of the array
+const basics = ["bullet", "pulsar", "Mt"];
+console.log(basics.join(" * "));
+basics.push("Activa");
+// console.log(basics.pop());
+console.log(basics);
+
+console.log(basics.shift());
+console.log(basics);
+console.log(basics.unshift("KTM"));
+console.log(basics);
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(1, 2, "Lemon");
+console.log(fruits);
