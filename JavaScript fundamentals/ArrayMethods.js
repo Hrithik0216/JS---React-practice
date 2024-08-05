@@ -19,11 +19,9 @@ console.log(
     }
   })
 );
-//https://www.ggorantala.dev/how-to-prevent-cannot-read-property-map-of-undefined/
 
 const arr3 = [1, 2, 3, [5, 6, 7, [8, 9, 4]], 56]; //flat() methods takes the depth of the arr as argument.
 console.log(arr3.flat(2)); //It can be a number, infinity (depending upon the depth). flat() flat(depth)
-//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat
 
 console.log(arr1.filter((val) => val !== 2)); //returns a new arr based on conditions
 
