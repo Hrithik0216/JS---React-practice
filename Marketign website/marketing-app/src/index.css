@@ -197,3 +197,17 @@ body {
 .send-inmail {
   color: orange;
 }
+
+/* .tree li:not(.zoom-effect) {
+  filter: blur(3px); Blurs non-zoomed elements
+  transition: all 0.5s ease;
+} */
+
+/* .tree  li:not(.zoom-effect) {
+  filter: blur(3px); Blurs sibling elements
+  transition: all 0.5s ease;
+} */
+
+.blurred {
+  filter: blur(3px);
+}
