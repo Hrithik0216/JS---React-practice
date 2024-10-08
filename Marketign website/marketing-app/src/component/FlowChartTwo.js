@@ -15,7 +15,7 @@ export const FlowchartTwo = () => {
           <ul>
             <li>
               <div className="li-container">
-                <div className='inner-li-container'>
+                <div className="inner-li-container">
                   <img
                     src={emailSentIcon}
                     alt="Email Sent Icon"
@@ -29,25 +29,25 @@ export const FlowchartTwo = () => {
               <ul>
                 <li>
                   <div className="li-container">
-                  <div className='inner-li-container'>
-                    <img
-                      src={emailSentIcon}
-                      alt="Email Sent Icon"
-                      className="icon"
-                    />
-                    <a href="#">Pricing page visited</a>
+                    <div className="inner-li-container">
+                      <img
+                        src={emailSentIcon}
+                        alt="Email Sent Icon"
+                        className="icon"
+                      />
+                      <a href="#">Pricing page visited</a>
                     </div>
                   </div>
                   <ul>
                     <li>
                       <div className="li-container">
-                      <div className='inner-li-container'>
-                        <img
-                          src={emailSentIcon}
-                          alt="Email Sent Icon"
-                          className="icon"
-                        />
-                        <a href="#">Send Connection Request</a>
+                        <div className="inner-li-container">
+                          <img
+                            src={emailSentIcon}
+                            alt="Email Sent Icon"
+                            className="icon"
+                          />
+                          <a href="#">Send Connection Request</a>
                         </div>
                       </div>
                       <ul>
@@ -84,63 +84,65 @@ export const FlowchartTwo = () => {
             </li>
             <li>
               <div className="li-container">
-              <div className='inner-li-container'>
-                <img
-                  src={emailSentIcon}
-                  alt="Email Sent Icon"
-                  className="icon"
-                />
-                <div className="text-container">
-                  <a href="#">Email not opened</a>
-                </div>
+                <div className="inner-li-container">
+                  <img
+                    src={emailSentIcon}
+                    alt="Email Sent Icon"
+                    className="icon"
+                  />
+                  <div className="text-container">
+                    <a href="#">Email not opened</a>
+                  </div>
                 </div>
               </div>
               <ul>
                 <li>
                   <div className="li-container">
-                  <div className='inner-li-container'>
-                    <img
-                      src={emailSentIcon}
-                      alt="Email Sent Icon"
-                      className="icon"
-                    />
-                    <a href="#">Send followup email</a>
+                    <div className="inner-li-container">
+                      <img
+                        src={emailSentIcon}
+                        alt="Email Sent Icon"
+                        className="icon"
+                      />
+                      <a href="#">Send followup email</a>
                     </div>
                   </div>
                   <ul>
                     <li>
-                      <div className="li-container">
-                      <div className='inner-li-container'>
-                        <img
-                          src={emailSentIcon}
-                          alt="Email Sent Icon"
-                          className="icon"
-                        />
-                        <a href="#">Visit LinkedIn Profile</a>
+                      {/* Apply zoom effect to the entire container */}
+                      <div className="li-container zoom-effect">
+                        <div className="inner-li-container">
+                          <img
+                            src={emailSentIcon}
+                            alt="Email Sent Icon"
+                            className="icon"
+                          />
+                          <a href="#">Visit LinkedIn Profile</a>
                         </div>
                       </div>
                       <ul>
                         <li>
-                          <div className="li-container">
-                          <div className='inner-li-container'>
-                            <img
-                              src={emailSentIcon}
-                              alt="Email Sent Icon"
-                              className="icon"
-                            />
-                            <a href="#">Send LinkedIn Inmail</a>
+                          {/* Apply zoom effect to the entire container */}
+                          <div className="li-container zoom-effect">
+                            <div className="inner-li-container">
+                              <img
+                                src={emailSentIcon}
+                                alt="Email Sent Icon"
+                                className="icon"
+                              />
+                              <a href="#">Send LinkedIn Inmail</a>
                             </div>
                           </div>
                           <ul>
                             <li>
                               <div className="li-container">
-                              <div className='inner-li-container'>
-                                <img
-                                  src={emailSentIcon}
-                                  alt="Email Sent Icon"
-                                  className="icon"
-                                />
-                                <a href="#">Send connection Request</a>
+                                <div className="inner-li-container">
+                                  <img
+                                    src={emailSentIcon}
+                                    alt="Email Sent Icon"
+                                    className="icon"
+                                  />
+                                  <a href="#">Send connection Request</a>
                                 </div>
                               </div>
                             </li>
