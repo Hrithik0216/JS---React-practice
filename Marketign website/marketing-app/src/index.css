@@ -1,0 +1,191 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: white;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 18px;
+}
+/* 
+For flowChart2 */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px !important;
+}
+
+.tree {
+  padding: 20px;
+}
+
+.tree ul {
+  padding-top: 20px;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.tree li {
+  float: left;
+  text-align: center;
+  list-style-type: none;
+  position: relative;
+  padding: 20px 5px 0 5px;
+  transition: all 0.5s;
+}
+
+.li-container {
+  border: 1px solid blue;
+  padding: 0;
+  width: 250px;
+  border-radius: 10px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.inner-li-container{
+  padding: 5px;
+}
+
+.li-container a {
+  font-size: 12px !important; /* Smaller font for the links */
+}
+/* For nestd */
+.request-accepted {
+  display: block; /* Ensure it behaves as a block element */
+  background-color: #D1E9F6; /* Optional: Add a background color if needed */
+  border-radius: 10px 10px 0 0; /* Match the top border radius */
+  padding:5px; /* Match padding with .li-container */
+  text-align: center;
+  font-size: 15px !important;
+}
+
+.li-parent {
+  margin-top: 10px; /* Add space between children */
+  padding: 2px;
+  text-align: center;
+  float: right;
+  position:relative;
+}
+.li-child {
+  margin-top: 2px; /* Add space between children */
+  padding: 5px;
+  text-align: left;
+  margin-left: 25px;
+  /* position:absolute; */
+  /* float: left; */
+}
+
+
+.icon {
+  width: 20px; /* Adjust icon size */
+  height: auto;
+  vertical-align: middle; /* Align icon with the text */
+  display: inline-block; /* Keep icon in line with text */
+  margin-bottom: 2px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column; /* Arrange text vertically */
+  align-items: center; /* Center align text below the icon */
+}
+
+
+.mailSent{
+  background-color: blue; 
+  text-align: center;
+  
+}
+.mailSentAnchor {
+  color: white !important;
+  text-decoration: none;
+}
+
+
+/* Connectors between elements with dashed lines */
+.tree li::before,
+.tree li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 50%;
+  border-top: 2px dashed #ccc; /* Dashed line */
+  width: 50%;
+  height: 19px;
+}
+
+.tree li::after {
+  right: auto;
+  left: 50%;
+  border-left: 2px dashed #ccc; /* Vertical dashed line */
+}
+
+/* Remove connectors for single children */
+.tree li:only-child::after,
+.tree li:only-child::before {
+  display: none;
+}
+
+.tree li:only-child {
+  padding-top: 0;
+}
+
+/* Adjust connectors for first and last children */
+.tree li:first-child::before,
+.tree li:last-child::after {
+  border: none;
+}
+
+/* Curved connectors with 25% curve */
+.tree li:last-child::before {
+  border-right: 2px dashed #ccc;
+  border-radius: 0 30px 0 0 !important; /* 25% curve */
+  -webkit-border-radius: 0 25% 0 0;
+  -moz-border-radius: 0 25% 0 0;
+}
+
+.tree li:first-child::after {
+  border-radius: 30px 0 0 0  !important; /* 25% curve */
+  -webkit-border-radius: 25% 0 0 0;
+  -moz-border-radius: 25% 0 0 0;
+}
+
+/* Downward connector */
+.tree ul ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 2px dashed #ccc;
+  width: 0;
+  height: 20px;
+}
+
+/* Link styles */
+.tree li a {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #666;
+  font-family: Arial, Verdana, Tahoma;
+  font-size: 11px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+/* .li-child{
+  padding: 5px;
+  text-align: left; 
+  margin-left:15px ;
+} */
