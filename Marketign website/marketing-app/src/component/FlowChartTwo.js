@@ -6,10 +6,13 @@ export const FlowchartTwo = () => {
       <ul>
         <li>
           <div className="li-container mailSent">
+            <div className='mailSent-div'>
             <img src={emailSentIcon} alt="Email Sent Icon" className="icon" />
             <a className="mailSentAnchor" href="#">
               Email Sent
             </a>
+            </div>
+            
           </div>
 
           <ul>

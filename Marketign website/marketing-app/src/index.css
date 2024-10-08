@@ -93,6 +93,11 @@ body {
 .mailSent {
   background-color: blue;
   text-align: center;
+  width: 150px;
+  height: 50px;
+}
+.mailSent-div{
+  margin-top: 12px;
 }
 
 .mailSentAnchor {
@@ -109,7 +114,7 @@ body {
   right: 50%;
   border-top: 2px dashed #ccc;
   width: 50%;
-  height: 19px;
+  height: 19px !important;
 }
 
 .tree li::after {
@@ -117,6 +122,14 @@ body {
   left: 50%;
   border-left: 2px dashed #ccc;
 }
+/* Note */
+/* .tree li:first-child::after,
+.tree li:first-child::before {
+  content: '' !important;
+  position: absolute!important;
+  top: 10px !important;
+  height: 19px !important;
+} */
 
 .tree li:only-child::after,
 .tree li:only-child::before {
