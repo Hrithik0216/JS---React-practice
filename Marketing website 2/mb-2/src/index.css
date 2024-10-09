@@ -188,25 +188,31 @@ For flowChart2 */
 
 /* Zoom effect animation */
 @keyframes zoomInOut {
-  0%, 100% {
-    transform: scale(1); /* Normal size */
+  0%, 25% {
+    transform: scale(1); /* Normal size at start */
   }
   50% {
-    transform: scale(1.1); /* Zoom in */
+    transform: scale(1.1); /* Start zooming in */
+  }
+  75% {
+    transform: scale(1.1); /* Stay zoomed in */
+  }
+  100% {
+    transform: scale(1); /* Return to normal size */
   }
 }
 
 /* Apply the animation to the li-container */
 .zoom-effect {
   display: inline-block;
-  animation: zoomInOut 10s infinite ease-in-out; /* Zoom effect every 3 seconds */
+  animation: zoomInOut 3s infinite ease-in-out; /* Zoom effect every 3 seconds */
   transition: all 3s;
 }
 
 
 
 /* For blur effect */
-/* .tree .li-container:not(.zoom-effect) {
+.tree .li-container:not(.zoom-effect) {
   filter: blur(1px);
   pointer-events: none;
-} */
+}
