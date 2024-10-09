@@ -82,19 +82,21 @@ For flowChart2 */
 
 
 .icon {
-  width: 20px; /* Adjust icon size */
   height: auto;
-  vertical-align: middle; /* Align icon with the text */
-  display: inline-block; /* Keep icon in line with text */
+  vertical-align: middle; 
+  display: inline-block; 
   margin-bottom: 2px;
 }
-
-.text-container {
-  display: flex;
-  flex-direction: column; /* Arrange text vertically */
-  align-items: center; /* Center align text below the icon */
+.mailsent-icon {
+  height: auto;
+  width: 25px;
+  vertical-align: middle;
+  display: inline-block; 
+  margin-bottom: 1px;
+  background-color: white;
+  border-radius: 50%; 
+  padding: 7px; 
 }
-
 
 .mailSent {
   background-color: blue;
@@ -104,13 +106,52 @@ For flowChart2 */
 }
 
 .mailSent-div{
-  margin-top: 12px;
+  margin-top: 7px;
 }
 
 .mailSentAnchor {
   color: white !important;
   text-decoration: none;
 }
+
+.icon2 {
+  height: auto;
+  vertical-align: middle; 
+  display: inline-block; 
+  margin-top: 4.5px;
+}
+.emailOpenedTwice-icon {
+  display: inline-block;  /* Keep the icon inline */
+  width: 27px;
+  height: 27px;
+  background-color: green; /* Apply background color only to the container */
+  padding: 2px;  /* Add 2px padding around the image for the extra background */
+  border-radius: 3px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column; /* Arrange text vertically */
+  align-items: center; /* Center align text below the icon */
+}
+
+.emailNotOpened-icon {
+  display: inline-block;  /* Keep the icon inline */
+  width: 27px;
+  height: 27px;
+  background-color: yellow; /* Apply background color only to the container */
+  padding: 2px;  /* Add 2px padding around the image for the extra background */
+  border-radius: 3px;
+}
+.icon3 {
+   
+  height: auto;
+  vertical-align: middle; 
+  display: inline-block; 
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
 
 
 /* Connectors between elements with dashed lines */
