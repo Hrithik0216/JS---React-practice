@@ -38,7 +38,7 @@ For flowChart2 */
   border: 1px solid blue;
   padding: 0;
   width: 200px;
-  border-radius: 10px;
+  border-radius: 5px;
   display: inline-block;
   position: relative;
   text-align: center;
@@ -46,6 +46,25 @@ For flowChart2 */
 
 .inner-li-container{
   padding: 5px;
+  
+}
+.inner-li-container-child-icon{
+  display: flex; /* Make icon and text appear side by side */
+  align-items: center; /* Vertically align items */
+  padding: 5px;
+}
+
+.icon-bg{
+  width: 25px;
+  height: 25px;
+  background-color: #E9EBF8;
+  border-radius: 2px;
+}
+
+.parent-container{
+  width: 120px;
+  padding: 0; 
+  border-radius: 5px;
 }
 
 .li-container a {
@@ -56,7 +75,7 @@ For flowChart2 */
 .request-accepted {
   display: block; /* Ensure it behaves as a block element */
   background-color: #D1E9F6; /* Optional: Add a background color if needed */
-  border-radius: 10px 10px 0 0; /* Match the top border radius */
+  border-radius: 5px 5px 0 0; /* Match the top border radius */
   padding:5px; /* Match padding with .li-container */
   text-align: center;
   font-size: 9px !important;
@@ -86,10 +105,18 @@ For flowChart2 */
   vertical-align: middle; 
   display: inline-block; 
   margin-bottom: 2px;
+  margin-top: 3px;
+}
+.email-icon{
+  height: auto;
+  vertical-align: middle; 
+  display: inline-block; 
+  margin-bottom: 2px;
+  margin-top: 1px;
 }
 .mailsent-icon {
-  height: auto;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   vertical-align: middle;
   display: inline-block; 
   margin-bottom: 1px;
@@ -102,11 +129,11 @@ For flowChart2 */
   background-color: blue;
   text-align: center;
   width: 150px;
-  height: 50px;
+  height: 45px;
 }
 
 .mailSent-div{
-  margin-top: 7px;
+  margin-top: 5px;
 }
 
 .mailSentAnchor {
@@ -124,9 +151,10 @@ For flowChart2 */
   display: inline-block;  /* Keep the icon inline */
   width: 27px;
   height: 27px;
-  background-color: green; /* Apply background color only to the container */
+  background-color: #38B892; /* Apply background color only to the container */
   padding: 2px;  /* Add 2px padding around the image for the extra background */
   border-radius: 3px;
+  margin-top: 3px;
 }
 
 .text-container {
@@ -139,9 +167,10 @@ For flowChart2 */
   display: inline-block;  /* Keep the icon inline */
   width: 27px;
   height: 27px;
-  background-color: yellow; /* Apply background color only to the container */
+  background-color: #FF9F09; /* Apply background color only to the container */
   padding: 2px;  /* Add 2px padding around the image for the extra background */
   border-radius: 3px;
+  margin-top: 3px;
 }
 .icon3 {
    
@@ -152,9 +181,23 @@ For flowChart2 */
   margin-left: 2px;
 }
 
-.call-prospect{
-  color: rgb(28, 61, 209) !important;
+.prospect-icon {
+  height: auto;
+  vertical-align: middle; 
+  display: inline-block; 
+  margin-bottom: 2px;
+  color: #03B2CB !important;
 }
+.call-prospect{
+  color: #03B2CB !important;
+}
+
+/* .li-connection-icon-bg{
+  width: 25px;
+  height: 25px;
+  background-color: #E9EBF8;
+  border-radius: 2px;
+} */
 
 
 /* Connectors between elements with dashed lines */
@@ -166,7 +209,7 @@ For flowChart2 */
   right: 50%;
   border-top: 2px dashed #ccc; /* Dashed line */
   width: 50%;
-  height: 19px;
+  height: 18px;
 }
 
 .tree li::after {
@@ -294,6 +337,6 @@ For flowChart2 */
 /* Apply the animation to the li-container */
 .zoom-effect {
   display: inline-block;
-  animation: zoomInOut 3s infinite ease-in-out; /* Zoom effect every 5 seconds */
+  animation: zoomInOut 3.5s infinite ease-in-out; /* Zoom effect every 5 seconds */
   transition: all 3s;
 }

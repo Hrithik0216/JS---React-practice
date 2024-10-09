@@ -9,7 +9,7 @@ import sendConnectionRequest from "../Assets/Send connection request.svg";
 import connectionRequestAccepted from "../Assets/Connection request accepted.svg";
 import sendLinkedinMessage from "../Assets/Send LinkedIn message.svg";
 import callTheProspect from "../Assets/Call the prospect.svg";
-
+import sendFollowUpMail from "../Assets/Send followup email.svg";
 
 export const Flowchart = () => {
   useEffect(() => {
@@ -39,11 +39,11 @@ export const Flowchart = () => {
 
         setTimeout(() => {
           applyBlur();
-        }, 1000); 
+        }, 1000);
 
         setTimeout(() => {
           removeBlur();
-        }, 2750); 
+        }, 2750);
       });
     });
   }, []);
@@ -59,7 +59,7 @@ export const Flowchart = () => {
                 <img
                   src={emailSentIcon}
                   alt="Email Sent Icon"
-                  className="icon"
+                  className="email-icon"
                 />
               </div>
               <a className="mailSentAnchor" href="#">
@@ -70,7 +70,7 @@ export const Flowchart = () => {
 
           <ul>
             <li>
-              <div className="li-container">
+              <div className="li-container parent-container">
                 <div className="inner-li-container">
                   <div className="emailOpenedTwice-icon">
                     <img
@@ -87,13 +87,15 @@ export const Flowchart = () => {
 
               <ul>
                 <li>
-                  <div className="li-container first-child-extended">
-                    <div className="inner-li-container">
-                      <img
-                        src={pricingPageVisited}
-                        alt="Email Sent Icon"
-                        className="icon"
-                      />
+                  <div className="li-container">
+                    <div className="inner-li-container-child-icon">
+                      <div className="icon-bg">
+                        <img
+                          src={pricingPageVisited}
+                          alt="Email Sent Icon"
+                          className="icon"
+                        />
+                      </div>
                       <a href="#">Pricing page visited</a>
                     </div>
                   </div>
@@ -101,12 +103,14 @@ export const Flowchart = () => {
                   <ul>
                     <li>
                       <div className="li-container">
-                        <div className="inner-li-container">
-                          <img
-                            src={sendConnectionRequest}
-                            alt="Email Sent Icon"
-                            className="icon"
-                          />
+                        <div className="inner-li-container-child-icon">
+                          <div className="icon-bg">
+                            <img
+                              src={sendConnectionRequest}
+                              alt="Email Sent Icon"
+                              className="icon"
+                            />
+                          </div>
                           <a href="#">Send Connection Request</a>
                         </div>
                       </div>
@@ -123,20 +127,27 @@ export const Flowchart = () => {
                             </div>
                             <div className="linkedIn-parent">
                               <div className="li-child">
+                              {/* <div className="li-connection-icon-bg"> */}
                                 <img
                                   src={sendLinkedinMessage}
                                   alt="Email Sent Icon"
                                   className="icon"
                                 />
+                                {/* </div> */}
                                 <a href="#">Send LinkedIn Message</a>
                               </div>
                               <div className="li-child">
-                                <img
-                                  src={callTheProspect}
-                                  alt="Email Sent Icon"
-                                  className="icon"
-                                />
-                                <a href="#" className="call-prospect">Call the Prospect</a>
+                                <div className="prospect-icon">
+                                  <img
+                                    src={callTheProspect}
+                                    alt="Email Sent Icon"
+                                    className="icon"
+                                  />
+                                </div>
+
+                                <a href="#" className="call-prospect">
+                                  Call the Prospect
+                                </a>
                               </div>
                             </div>
                           </div>
@@ -149,12 +160,12 @@ export const Flowchart = () => {
             </li>
 
             <li>
-              <div className="li-container">
+              <div className="li-container parent-container">
                 <div className="inner-li-container">
-                <div className="emailNotOpened-icon">
+                  <div className="emailNotOpened-icon">
                     <img
                       src={emailNotOpened}
-                      alt="Email opened twice Icon"
+                      alt="Email not opened Icon"
                       className="icon3"
                     />
                   </div>
@@ -167,48 +178,57 @@ export const Flowchart = () => {
               <ul>
                 <li>
                   <div className="li-container first-child-extended">
-                    <div className="inner-li-container">
-                      <img
-                        src={emailSentIcon}
-                        alt="Email Sent Icon"
-                        className="icon"
-                      />
+                    <div className="inner-li-container-child-icon">
+                      <div className="icon-bg">
+                        <img
+                          src={sendFollowUpMail}
+                          alt="Email Sent Icon"
+                          className="icon"
+                        />
+                      </div>
                       <a href="#">Send followup email</a>
                     </div>
                   </div>
                   <ul>
                     <li>
                       <div className="li-container zoom-effect">
-                        <div className="inner-li-container">
-                          <img
-                            src={visitLinkedinProfile}
-                            alt="Email Sent Icon"
-                            className="icon"
-                          />
+                        <div className="inner-li-container-child-icon">
+                          <div className="icon-bg">
+                            <img
+                              src={visitLinkedinProfile}
+                              alt="Email Sent Icon"
+                              className="icon"
+                            />
+                          </div>
                           <a href="#">Visit LinkedIn Profile</a>
                         </div>
                       </div>
                       <ul>
                         <li>
                           <div className="li-container zoom-effect">
-                            <div className="inner-li-container">
-                              <img
-                                src={sendLinkedInInmail}
-                                alt="Email Sent Icon"
-                                className="icon"
-                              />
+                            <div className="inner-li-container-child-icon">
+                              <div className="icon-bg">
+                                <img
+                                  src={sendLinkedInInmail}
+                                  alt="Email Sent Icon"
+                                  className="icon"
+                                />
+                              </div>
                               <a href="#">Send LinkedIn Inmail</a>
                             </div>
                           </div>
                           <ul>
                             <li>
                               <div className="li-container">
-                                <div className="inner-li-container">
-                                  <img
-                                    src={sendConnectionRequest}
-                                    alt="Email Sent Icon"
-                                    className="icon"
-                                  />
+                                <div className="inner-li-container-child-icon">
+                                  <div className="icon-bg">
+                                    <img
+                                      src={sendConnectionRequest}
+                                      alt="Email Sent Icon"
+                                      className="icon"
+                                    />
+                                  </div>
+
                                   <a href="#">Send connection Request</a>
                                 </div>
                               </div>
