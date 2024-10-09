@@ -152,6 +152,9 @@ For flowChart2 */
   margin-left: 2px;
 }
 
+.call-prospect{
+  color: rgb(28, 61, 209) !important;
+}
 
 
 /* Connectors between elements with dashed lines */

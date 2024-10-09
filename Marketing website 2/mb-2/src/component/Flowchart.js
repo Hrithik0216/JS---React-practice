@@ -16,7 +16,6 @@ export const Flowchart = () => {
     const zoomEffectElements = document.querySelectorAll(".zoom-effect");
     const allContainers = document.querySelectorAll(".tree .li-container");
 
-    // Function to apply blur to all non-zooming elements
     function applyBlur() {
       console.log("Blur applied");
       allContainers.forEach((li) => {
@@ -38,15 +37,13 @@ export const Flowchart = () => {
       element.addEventListener("animationiteration", () => {
         console.log("Animation iteration started");
 
-        // Apply blur at 50% of the animation
         setTimeout(() => {
           applyBlur();
-        }, 1000); // Adjust according to your animation duration
+        }, 500); 
 
-        // Remove blur just before zoom-out starts
         setTimeout(() => {
           removeBlur();
-        }, 2750); // Extend to match the zoom-out phase
+        }, 2750*5); 
       });
     });
   }, []);
@@ -139,7 +136,7 @@ export const Flowchart = () => {
                                   alt="Email Sent Icon"
                                   className="icon"
                                 />
-                                <a href="#">Call the Prospect</a>
+                                <a href="#" className="call-prospect">Call the Prospect</a>
                               </div>
                             </div>
                           </div>
