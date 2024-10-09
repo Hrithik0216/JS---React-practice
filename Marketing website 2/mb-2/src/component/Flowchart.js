@@ -1,6 +1,50 @@
 import emailSentIcon from "../Assets/download.svg";
+import React, { useEffect } from "react";
 
 export const Flowchart = () => {
+  useEffect(() => {
+    const zoomEffectElements = document.querySelectorAll(".zoom-effect");
+    const allContainers = document.querySelectorAll(".tree .li-container");
+
+    // Function to apply blur to all non-zooming elements
+    function applyBlur() {
+      console.log("Blur applied");
+      allContainers.forEach((li) => {
+        if (!li.classList.contains("zoom-effect")) {
+          li.classList.add("blur-applied");
+        }
+      });
+    }
+
+    // Function to remove blur from all elements
+    function removeBlur() {
+      console.log("Blur removed");
+      allContainers.forEach((li) => {
+        li.classList.remove("blur-applied");
+      });
+    }
+
+    zoomEffectElements.forEach((element) => {
+      element.addEventListener("animationiteration", () => {
+        console.log("Animation iteration started");
+
+        // Apply blur at 50% of the animation
+        setTimeout(() => {
+          applyBlur();
+        }, 1000); // Adjust according to your animation duration
+
+        // Remove blur just before zoom-out starts
+        setTimeout(() => {
+          removeBlur();
+        }, 2750); // Extend to match the zoom-out phase
+      });
+    });
+   
+  }, []);
+
+
+  
+
   return (
     <div className="tree">
       <ul>
@@ -31,7 +75,7 @@ export const Flowchart = () => {
 
               <ul>
                 <li>
-                  <div className="li-container first-child-extended"> {/* For extending line */}
+                  <div className="li-container first-child-extended">
                     <div className="inner-li-container">
                       <img
                         src={emailSentIcon}
@@ -58,12 +102,12 @@ export const Flowchart = () => {
                         <li>
                           <div className="li-container">
                             <div className="request-accepted">
-                            <img
-                            src={emailSentIcon}
-                            alt="Email Sent Icon"
-                            className="icon"
-                          />
-                            <a href="#">Connection Request Accepted</a>
+                              <img
+                                src={emailSentIcon}
+                                alt="Email Sent Icon"
+                                className="icon"
+                              />
+                              <a href="#">Connection Request Accepted</a>
                             </div>
                             <div className="linkedIn-parent">
                               <div className="li-child">
@@ -108,7 +152,7 @@ export const Flowchart = () => {
 
               <ul>
                 <li>
-                  <div className="li-container first-child-extended"> {/* For extending line */}
+                  <div className="li-container first-child-extended">
                     <div className="inner-li-container">
                       <img
                         src={emailSentIcon}

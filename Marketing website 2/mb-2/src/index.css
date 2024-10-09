@@ -203,16 +203,53 @@ For flowChart2 */
 }
 
 /* Apply the animation to the li-container */
-.zoom-effect {
+/* .zoom-effect {
   display: inline-block;
-  animation: zoomInOut 3s infinite ease-in-out; /* Zoom effect every 3 seconds */
+  animation: zoomInOut 3s infinite ease-in-out; Zoom effect every 3 seconds
   transition: all 3s;
-}
+} */
 
 
 
 /* For blur effect */
-.tree .li-container:not(.zoom-effect) {
+/* .tree .li-container:not(.zoom-effect) {
   filter: blur(1px);
   pointer-events: none;
+} */
+
+/* Add the new CSS for blur control */
+
+/* Initially, no blur applied */
+.tree .li-container {
+  filter: none;
+  transition: filter 0.5s ease;
+}
+
+/* Apply blur to non-zoomed elements */
+.tree .li-container.blur-applied {
+  filter: blur(1px);
+  pointer-events: none; /* Disable interaction with blurred elements */
+}
+
+/* Zoom effect animation */
+@keyframes zoomInOut {
+  0%, 25% {
+    transform: scale(1); /* Normal size at start */
+  }
+  50% {
+    transform: scale(1.1); /* Start zooming in */
+  }
+  75% {
+    transform: scale(1.1); /* Stay zoomed in */
+  }
+  100% {
+    transform: scale(1); /* Return to normal size */
+  }
+}
+
+/* Apply the animation to the li-container */
+.zoom-effect {
+  display: inline-block;
+  animation: zoomInOut 5s infinite ease-in-out; /* Zoom effect every 5 seconds */
+  transition: all 3s;
 }
