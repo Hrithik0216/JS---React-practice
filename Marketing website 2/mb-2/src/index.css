@@ -294,6 +294,6 @@ For flowChart2 */
 /* Apply the animation to the li-container */
 .zoom-effect {
   display: inline-block;
-  animation: zoomInOut 5s infinite ease-in-out; /* Zoom effect every 5 seconds */
+  animation: zoomInOut 3s infinite ease-in-out; /* Zoom effect every 5 seconds */
   transition: all 3s;
 }

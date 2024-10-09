@@ -39,11 +39,11 @@ export const Flowchart = () => {
 
         setTimeout(() => {
           applyBlur();
-        }, 500); 
+        }, 1000); 
 
         setTimeout(() => {
           removeBlur();
-        }, 2750*5); 
+        }, 2750); 
       });
     });
   }, []);
