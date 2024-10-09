@@ -32,7 +32,6 @@ For flowChart2 */
   list-style-type: none;
   position: relative;
   padding: 20px 5px 0 5px;
-  transition: all 0.5s;
 }
 
 .li-container {
@@ -50,7 +49,8 @@ For flowChart2 */
 }
 
 .li-container a {
-  font-size: 12px !important; /* Smaller font for the links */
+  font-size: 9px !important; /* Smaller font for the links */
+  font-weight: bold;
 }
 /* For nestd */
 .request-accepted {
@@ -59,15 +59,17 @@ For flowChart2 */
   border-radius: 10px 10px 0 0; /* Match the top border radius */
   padding:5px; /* Match padding with .li-container */
   text-align: center;
-  font-size: 15px !important;
+  font-size: 9px !important;
+  font-weight: bold;
 }
 
-.li-parent {
-  margin-top: 10px; /* Add space between children */
+.linkedIn-parent {
+  margin-top: -2px; /* Add space between children */
   padding: 2px;
   text-align: center;
   float: right;
   position:relative;
+  margin-right: 20px;
 }
 .li-child {
   margin-top: 2px; /* Add space between children */
@@ -180,8 +182,8 @@ For flowChart2 */
   display: inline-block;
   border-radius: 5px;
   transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
+  /* -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s; */
 }
 
 /* Zoom effect animation */
@@ -197,6 +199,14 @@ For flowChart2 */
 /* Apply the animation to the li-container */
 .zoom-effect {
   display: inline-block;
-  animation: zoomInOut 3s infinite ease-in-out; /* Zoom effect every 3 seconds */
+  animation: zoomInOut 10s infinite ease-in-out; /* Zoom effect every 3 seconds */
   transition: all 3s;
 }
+
+
+
+/* For blur effect */
+/* .tree .li-container:not(.zoom-effect) {
+  filter: blur(1px);
+  pointer-events: none;
+} */
