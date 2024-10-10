@@ -90,23 +90,74 @@ body {
 }
 
 .linkedIn-parent {
-  margin-top: -2px; /* Add space between children */
+  margin-top: -2px;
   padding: 2px;
-  text-align: center;
+  text-align: left; /* Ensure text is aligned left */
   float: right;
-  position:relative;
+  position: relative;
   margin-right: 20px;
 }
-.li-child {
-  margin-top: 2px; /* Add space between children */
-  padding: 5px;
+/* .li-child {
+  margin-top: 2px; 
+  padding: 3px;
   text-align: left;
   margin-left: 25px;
-  /* position:absolute; */
-  /* float: left; */
+  width: 100%;
+   float: left; 
+} */
+
+.li-child {
+  display: grid;
+  grid-template-columns: 25px auto; /* 30px for the icon, auto for the text */
+  align-items: center;
+  /* gap: 10px;  */
+  padding: 3px;
+  margin-left: 25px;
+  width: 100%;
+  text-align: left; /* Align the text to the left */
 }
 
 
+.connection-accepted-icon-bg,
+.call-prospect-icon-bg {
+  width: 20px;
+  height: 20px;
+  background-color: #E9EBF8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center; /* Center the icon inside the background */
+  align-items: center; /* Vertically center the icon */
+}
+
+.call-prospect-icon-bg {
+  background-color: #03B2CB;
+}
+
+.connection-accepted-icon,
+.call-prospect-icon {
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  max-width: 12px;   
+  max-height: 12px; 
+}
+
+.connection-accepted-icon{
+  margin-left: 1.5px;
+  margin-top: 1.5px;
+}
+
+.call-prospect-icon{
+  margin-left: 3.5px;
+}
+
+.a-connection-request-accepted {
+  text-decoration: none;
+  color: #666;
+  font-weight: bold;
+  margin-left: 0px; /* Ensures a gap between the icon and text */
+  display: inline-block;
+}
 .icon {
   height: auto;
   vertical-align: middle; 
@@ -267,7 +318,7 @@ body {
   text-decoration: none;
   color: #666;
   font-family: Arial, Verdana, Tahoma;
-  font-size: 11px;
+  font-size: 9px !important;
   display: inline-block;
   border-radius: 5px;
   transition: all 0.5s;
