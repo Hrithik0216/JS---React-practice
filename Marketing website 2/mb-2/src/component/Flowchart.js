@@ -67,7 +67,7 @@ export const Flowchart = () => {
                     className="email-icon"
                   />
                 </div>
-                <a className="mailSentAnchor" href="#">
+                <a className="mailSentAnchor">
                   Email Sent
                 </a>
               </div>
@@ -85,7 +85,7 @@ export const Flowchart = () => {
                       />
                     </div>
                     <div className="text-container">
-                      <a href="#"> Email Opened twice</a>
+                      <a> Email Opened twice</a>
                     </div>
                   </div>
                 </div>
@@ -101,7 +101,7 @@ export const Flowchart = () => {
                             className="icon"
                           />
                         </div>
-                        <a href="#">Pricing page visited</a>
+                        <a>Pricing page visited</a>
                       </div>
                     </div>
 
@@ -116,7 +116,7 @@ export const Flowchart = () => {
                                 className="icon"
                               />
                             </div>
-                            <a href="#">Send Connection Request</a>
+                            <a>Send Connection Request</a>
                           </div>
                         </div>
                         <ul>
@@ -128,7 +128,7 @@ export const Flowchart = () => {
                                   alt="Request Accepted Icon"
                                   className="icon"
                                 />
-                                <a href="#">Connection Request Accepted</a>
+                                <a>Connection Request Accepted</a>
                               </div>
                               <div className="linkedIn-parent">
                                 <div className="li-child">
@@ -139,7 +139,7 @@ export const Flowchart = () => {
                                       className="connection-accepted-icon"
                                     />
                                   </div>
-                                  <a href="#" className="a-connection-request-accepted">Send LinkedIn Message</a>
+                                  <a className="a-connection-request-accepted">Send LinkedIn Message</a>
                                 </div>
                                 <div className="li-child">
                                   <div className="call-prospect-icon-bg zoom-effect">
@@ -150,7 +150,7 @@ export const Flowchart = () => {
                                     />
                                   </div>
 
-                                  <a href="#" className="call-prospect zoom-effect">
+                                  <a className="call-prospect zoom-effect">
                                     Call the Prospect
                                   </a>
                                 </div>
@@ -175,7 +175,7 @@ export const Flowchart = () => {
                       />
                     </div>
                     <div className="text-container">
-                      <a href="#">Email not opened</a>
+                      <a>Email not opened</a>
                     </div>
                   </div>
                 </div>
@@ -191,7 +191,7 @@ export const Flowchart = () => {
                             className="icon"
                           />
                         </div>
-                        <a href="#">Send followup email</a>
+                        <a>Send followup email</a>
                       </div>
                     </div>
                     <ul>
@@ -205,7 +205,7 @@ export const Flowchart = () => {
                                 className="icon"
                               />
                             </div>
-                            <a href="#">Visit LinkedIn Profile</a>
+                            <a>Visit LinkedIn Profile</a>
                           </div>
                         </div>
                         <ul>
@@ -219,7 +219,7 @@ export const Flowchart = () => {
                                     className="icon"
                                   />
                                 </div>
-                                <a href="#">Send LinkedIn Inmail</a>
+                                <a>Send LinkedIn Inmail</a>
                               </div>
                             </div>
                             <ul>
@@ -234,7 +234,7 @@ export const Flowchart = () => {
                                       />
                                     </div>
 
-                                    <a href="#">Send connection Request</a>
+                                    <a>Send connection Request</a>
                                   </div>
                                 </div>
                               </li>
