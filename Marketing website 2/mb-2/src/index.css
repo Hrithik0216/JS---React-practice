@@ -384,7 +384,7 @@ body {
   width: 37%;  /* Make the left side 37% of the viewport */
   height: 70%;
   position: fixed;  /* Ensure it stays fixed while scrolling */
-  top: -73px;
+  top: -76px;
   left: 0;
   z-index: -1;  /* Behind the flowchart */
 }
