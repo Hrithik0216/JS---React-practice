@@ -49,6 +49,8 @@ export const Flowchart = () => {
   }, []);
 
   return (
+    <>
+    <div className="background-image"></div>
     <div className="tree">
       <ul>
         <li>
@@ -245,5 +247,6 @@ export const Flowchart = () => {
         </li>
       </ul>
     </div>
+    </>
   );
 };

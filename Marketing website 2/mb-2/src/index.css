@@ -349,3 +349,16 @@ For flowChart2 */
   animation: zoomInOut 3.5s infinite ease-in-out; /* Zoom effect every 5 seconds */
   transition: all 3s;
 }
+
+.background-image {
+  margin-top: 0;
+  background: url('./Assets/person image.png') no-repeat center center;
+  background-size: 70%;  /* Scale down the image size */
+  width: 37%;  /* Make the left side 37% of the viewport */
+  height: 70%;
+  position: fixed;  /* Ensure it stays fixed while scrolling */
+  top: 0;
+  left: 0;
+  z-index: -1;  /* Behind the flowchart */
+}
+
