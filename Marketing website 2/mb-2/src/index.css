@@ -29,7 +29,7 @@ body {
 .tree ul {
   padding-top: 20px;
   position: relative;
-  transition: all 0.5s;
+  /* transition: all 0.5s; */
 }
 
 .tree li {
@@ -321,7 +321,7 @@ body {
   font-size: 9px !important;
   display: inline-block;
   border-radius: 5px;
-  transition: all 0.5s;
+  /* transition: all 0.5s; */
 }
 
 /* Zoom effect animation */

@@ -19,10 +19,7 @@ export const Flowchart = () => {
     function applyBlur() {
       console.log("Blur applied");
       allContainers.forEach((li) => {
-        if (
-          !li.classList.contains("zoom-effect") &&
-          !li.classList.contains("zoom-avoid")
-        ) {
+        if (!li.classList.contains("zoom-effect")) {
           li.classList.add("blur-applied");
         }
       });
