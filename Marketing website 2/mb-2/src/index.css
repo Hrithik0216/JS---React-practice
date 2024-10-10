@@ -8,9 +8,7 @@ body {
   font-family: 'Fjalla One', sans-serif;
   font-size: 18px;
 }
-/* 
-For flowChart2 */
-
+/* For flowChart2 */
 * {
   margin: 0;
   padding: 0;
@@ -139,6 +137,7 @@ For flowChart2 */
   text-align: center;
   width: 150px;
   height: 45px;
+  top: -10px;
 }
 
 .mailSent-div{
@@ -201,13 +200,6 @@ For flowChart2 */
   color: #03B2CB !important;
 }
 
-/* .li-connection-icon-bg{
-  width: 25px;
-  height: 25px;
-  background-color: #E9EBF8;
-  border-radius: 2px;
-} */
-
 
 /* Connectors between elements with dashed lines */
 .tree li::before,
@@ -261,11 +253,12 @@ For flowChart2 */
 .tree ul ul::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: -10px;
   left: 50%;
   border-left: 2px dashed #ccc;
   width: 0;
-  height: 20px;
+  height: 30px;
+  z-index: -1;
 }
 
 /* Link styles */
@@ -278,8 +271,6 @@ For flowChart2 */
   display: inline-block;
   border-radius: 5px;
   transition: all 0.5s;
-  /* -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s; */
 }
 
 /* Zoom effect animation */
@@ -297,21 +288,6 @@ For flowChart2 */
     transform: scale(1); /* Return to normal size */
   }
 }
-
-/* Apply the animation to the li-container */
-/* .zoom-effect {
-  display: inline-block;
-  animation: zoomInOut 3s infinite ease-in-out; Zoom effect every 3 seconds
-  transition: all 3s;
-} */
-
-
-
-/* For blur effect */
-/* .tree .li-container:not(.zoom-effect) {
-  filter: blur(1px);
-  pointer-events: none;
-} */
 
 /* Add the new CSS for blur control */
 
