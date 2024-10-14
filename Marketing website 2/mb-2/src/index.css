@@ -308,7 +308,7 @@ body {
   left: 50%;
   border-left: 2px dashed #ccc;
   width: 0;
-  height: 30px;
+  height: 31px;
   z-index: -1;
 }
 
@@ -435,4 +435,9 @@ body {
 /* Add a border when zooming */
 .li-container.zooming {
   border: 1px solid blue !important;
+}
+
+
+.grand-child{
+  top: 4px;
 }

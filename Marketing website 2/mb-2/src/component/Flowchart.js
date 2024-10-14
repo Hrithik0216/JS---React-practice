@@ -108,7 +108,7 @@ export const Flowchart = () => {
                 </div>
 
                 <ul>
-                  <li>
+                  <li className="grand-child">
                     <div className="li-container">
                       <div className="inner-li-container-child-icon">
                         <div className="icon-bg">
@@ -198,7 +198,7 @@ export const Flowchart = () => {
                 </div>
 
                 <ul>
-                  <li>
+                  <li className="grand-child">
                     <div className="li-container first-child-extended">
                       <div className="inner-li-container-child-icon">
                         <div className="icon-bg">
