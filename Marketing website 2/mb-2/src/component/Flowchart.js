@@ -16,6 +16,7 @@ export const Flowchart = () => {
     const zoomEffectElements = document.querySelectorAll(".zoom-effect");
     const allContainers = document.querySelectorAll(".tree .li-container");
 
+    // Apply blur effect to elements that aren't zooming
     function applyBlur() {
       console.log("Blur applied");
       allContainers.forEach((li) => {
@@ -25,21 +26,7 @@ export const Flowchart = () => {
       });
     }
 
-    // function applyBlur() {
-    //   console.log("Blur applied");
-    //   allContainers.forEach((li) => {
-    //     // Skip applying blur if it is the "Call the Prospect" element
-    //     if (!li.classList.contains("zoom-effect") 
-    //       // && !li.querySelector(".call-prospect")
-    //     ) {
-    //       li.classList.add("blur-applied");
-    //     }
-    //   });
-    // }
-    
-    
-
-    // Function to remove blur from all elements
+    // Remove blur effect from all elements
     function removeBlur() {
       console.log("Blur removed");
       allContainers.forEach((li) => {
@@ -47,16 +34,38 @@ export const Flowchart = () => {
       });
     }
 
+    // Add blue border to the zooming element
+    function addZoomingBorder(element) {
+      element.classList.add("zooming");
+    }
+
+    // Remove blue border from the zooming element
+    function removeZoomingBorder(element) {
+      element.classList.remove("zooming");
+    }
+
     zoomEffectElements.forEach((element) => {
       element.addEventListener("animationiteration", () => {
         console.log("Animation iteration started");
 
+        // Add blue border when zooming in
+        setTimeout(()=>{
+          addZoomingBorder(element);
+        },1300)
+       
+
+        // Set timeouts for applying and removing blur and border effects
         setTimeout(() => {
           applyBlur();
         }, 1000);
 
         setTimeout(() => {
           removeBlur();
+        }, 2750);
+
+        // Remove blue border after the animation finishes
+        setTimeout(() => {
+          removeZoomingBorder(element);
         }, 2750);
       });
     });
@@ -71,16 +80,13 @@ export const Flowchart = () => {
             <div className="li-container mailSent">
               <div className="mailSent-div">
                 <div className="mailsent-icon">
-                  {" "}
                   <img
                     src={emailSentIcon}
                     alt="Email Sent Icon"
                     className="email-icon"
                   />
                 </div>
-                <a className="mailSentAnchor">
-                  Email Sent
-                </a>
+                <a className="mailSentAnchor">Email Sent</a>
               </div>
             </div>
 
@@ -96,7 +102,7 @@ export const Flowchart = () => {
                       />
                     </div>
                     <div className="text-container">
-                      <a> Email Opened twice</a>
+                      <a>Email Opened twice</a>
                     </div>
                   </div>
                 </div>

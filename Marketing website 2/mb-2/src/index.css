@@ -430,3 +430,9 @@ body {
   pointer-events: auto !important;
   opacity: 1 !important; /* Ensure full opacity */
 }
+
+
+/* Add a border when zooming */
+.li-container.zooming {
+  border: 1px solid blue !important;
+}
