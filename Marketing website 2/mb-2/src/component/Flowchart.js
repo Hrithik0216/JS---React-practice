@@ -49,10 +49,9 @@ export const Flowchart = () => {
         console.log("Animation iteration started");
 
         // Add blue border when zooming in
-        setTimeout(()=>{
+        setTimeout(() => {
           addZoomingBorder(element);
-        },1300)
-       
+        }, 1300);
 
         // Set timeouts for applying and removing blur and border effects
         setTimeout(() => {
@@ -147,6 +146,8 @@ export const Flowchart = () => {
                                 />
                                 <a>Connection Request Accepted</a>
                               </div>
+                              {/* Add the connector here */}
+                              <div className="connection-accepted-connector-parent"></div>   
                               <div className="linkedIn-parent">
                                 <div className="li-child">
                                   <div className="connection-accepted-icon-bg">
@@ -156,8 +157,11 @@ export const Flowchart = () => {
                                       className="connection-accepted-icon"
                                     />
                                   </div>
-                                  <a className="a-connection-request-accepted">Send LinkedIn Message</a>
+                                  <a className="a-connection-request-accepted">
+                                    Send LinkedIn Message
+                                  </a>
                                 </div>
+                                <div className="connection-accepted-connector"></div>
                                 <div className="li-child">
                                   <div className="call-prospect-icon-bg zoom-effect no-opacity-effect">
                                     <img

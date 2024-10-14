@@ -111,7 +111,7 @@ body {
   grid-template-columns: 25px auto; /* 30px for the icon, auto for the text */
   align-items: center;
   /* gap: 10px;  */
-  padding: 5px;
+  padding: 1px;
   margin-left: 25px;
   width: 100%;
   text-align: left; /* Align the text to the left */
@@ -441,3 +441,29 @@ body {
 .grand-child{
   top: 4px;
 }
+/* 
+.connection-accepted-connector {
+  position: relative;
+  height: 12px; 
+  width: 2px;
+  background-color: #0073b1; 
+  left: 40px; 
+} */
+
+.connection-accepted-connector-parent {
+  position: relative;
+  height: 6px; /* Adjust this value to control the length of the vertical line */
+  width: 0; /* Set width to 0, as we will use border-left for the line */
+  border-left: 2px dashed #ccc; /* Dashed line styling for a vertical line */
+  left: 40px; /* Position it to the left */
+  margin-top: 1px; /* Add spacing */
+}
+.connection-accepted-connector {
+  position: relative;
+  height: 5px; /* Adjust this value to control the length of the vertical line */
+  width: 0; /* Set width to 0, as we will use border-left for the line */
+  border-left: 2px dashed #ccc; /* Dashed line styling for a vertical line */
+  left: 35px; /* Position it to the left */
+  /* margin-top: 1px;  */
+}
+
