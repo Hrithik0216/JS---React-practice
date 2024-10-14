@@ -350,7 +350,8 @@ body {
 
 /* Apply blur to non-zoomed elements */
 .tree .li-container.blur-applied {
-  filter: blur(1px);
+  /* filter: blur(1px); */
+  filter: opacity(.6);
   pointer-events: none; /* Disable interaction with blurred elements */
 }
 
@@ -389,3 +390,9 @@ body {
   z-index: -1;  /* Behind the flowchart */
 }
 
+/* Prevent opacity changes for specific elements */
+.no-opacity-effect {
+  filter: none !important;
+  pointer-events: auto !important;
+  opacity: 1 !important; /* Ensure full opacity */
+}

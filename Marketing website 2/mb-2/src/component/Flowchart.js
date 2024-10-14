@@ -25,6 +25,20 @@ export const Flowchart = () => {
       });
     }
 
+    // function applyBlur() {
+    //   console.log("Blur applied");
+    //   allContainers.forEach((li) => {
+    //     // Skip applying blur if it is the "Call the Prospect" element
+    //     if (!li.classList.contains("zoom-effect") 
+    //       // && !li.querySelector(".call-prospect")
+    //     ) {
+    //       li.classList.add("blur-applied");
+    //     }
+    //   });
+    // }
+    
+    
+
     // Function to remove blur from all elements
     function removeBlur() {
       console.log("Blur removed");
@@ -118,7 +132,7 @@ export const Flowchart = () => {
                         </div>
                         <ul>
                           <li>
-                            <div className="li-container zoom-avoid">
+                            <div className="li-container">
                               <div className="request-accepted">
                                 <img
                                   src={connectionRequestAccepted}
@@ -139,15 +153,15 @@ export const Flowchart = () => {
                                   <a className="a-connection-request-accepted">Send LinkedIn Message</a>
                                 </div>
                                 <div className="li-child">
-                                  <div className="call-prospect-icon-bg zoom-effect">
+                                  <div className="call-prospect-icon-bg zoom-effect no-opacity-effect">
                                     <img
                                       src={callTheProspect}
                                       alt="call Icon"
-                                      className="call-prospect-icon"
+                                      className="call-prospect-icon zoom-effect no-opacity-effect"
                                     />
                                   </div>
 
-                                  <a className="call-prospect zoom-effect">
+                                  <a className="call-prospect zoom-effect no-opacity-effect">
                                     Call the Prospect
                                   </a>
                                 </div>
@@ -230,7 +244,6 @@ export const Flowchart = () => {
                                         className="icon"
                                       />
                                     </div>
-
                                     <a>Send connection Request</a>
                                   </div>
                                 </div>
