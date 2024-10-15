@@ -137,8 +137,8 @@ export const Flowchart = () => {
                         </div>
                         <ul>
                           <li>
-                            <div className="li-container">
-                              <div className="request-accepted">
+                            <div class="li-container connection-request-liparent">
+                              <div class="request-accepted">
                                 <img
                                   src={connectionRequestAccepted}
                                   alt="Request Accepted Icon"
@@ -146,11 +146,10 @@ export const Flowchart = () => {
                                 />
                                 <a>Connection Request Accepted</a>
                               </div>
-                              {/* Add the connector here */}
-                              <div className="connection-accepted-connector-parent"></div>   
-                              <div className="linkedIn-parent">
-                                <div className="li-child">
-                                  <div className="connection-accepted-icon-bg">
+                              <div class="connection-accepted-connector-parent"></div>
+                              <div class="linkedIn-parent">
+                                <div class="li-child">
+                                  <div class="connection-accepted-icon-bg">
                                     <img
                                       src={sendLinkedinMessage}
                                       alt="Message Sent Icon"
@@ -161,20 +160,19 @@ export const Flowchart = () => {
                                     Send LinkedIn Message
                                   </a>
                                 </div>
-                                <div className="connection-accepted-connector"></div>
-                                <div className="li-child">
-                                  <div className="call-prospect-icon-bg zoom-effect no-opacity-effect">
-                                    <img
-                                      src={callTheProspect}
-                                      alt="call Icon"
-                                      className="call-prospect-icon zoom-effect no-opacity-effect"
-                                    />
-                                  </div>
-
-                                  <a className="call-prospect zoom-effect no-opacity-effect">
-                                    Call the Prospect
-                                  </a>
+                                <div class="connection-accepted-connector"></div>
+                              </div>
+                              <div class="li-child call-prospect-container">
+                                <div class="call-prospect-icon-bg zoom-effect no-opacity-effect">
+                                  <img
+                                    src={callTheProspect}
+                                    alt="call Icon"
+                                    className="call-prospect-icon zoom-effect no-opacity-effect"
+                                  />
                                 </div>
+                                <a className="call-prospect zoom-effect no-opacity-effect">
+                                  Call the Prospect
+                                </a>
                               </div>
                             </div>
                           </li>
